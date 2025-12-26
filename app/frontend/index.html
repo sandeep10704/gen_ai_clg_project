@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SmartSummarize — Home</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">AI</div>
+        <div class="brand-text">SmartSummarize</div>
+      </a>
+
+      <nav class="nav-links">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="summarizer.html"> Model</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / ABOUT -->
+  <main class="page">
+    <section class="hero glass">
+      <h1>Summarize Business Content — Fast & Clear</h1>
+      <p class="lead">
+        SmartSummarize shortens business articles, reports, or emails into meaningful summaries.
+        Choose between Extractive, Abstractive, Hybrid model for the best results.
+      </p>
+
+      <div class="howto">
+        <h3>How to use</h3>
+        <ol>
+          <li>Click <strong>Open Model</strong> in the top right corner to open the summarizer UI.</li>
+          <li>Paste an article, report, or long email into the left panel.</li>
+          <li>Choose summarization style & hit <strong>Summarize</strong>. Results appear on the right.</li>
+        </ol>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature glass-mini">
+          <h4>Abstractive</h4>
+          <p>Generates concise, human-like summaries — may paraphrase and condense content.</p>
+        </div>
+        <div class="feature glass-mini">
+          <h4>Extractive</h4>
+          <p>Selects key sentences from the source. Fast and preserves original phrasing.</p>
+        </div>
+        <div class="feature glass-mini">
+          <h4>Hybrid</h4>
+          <p>Combines extractive filtering with abstractive rewriting for optimal clarity.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

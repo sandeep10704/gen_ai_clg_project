@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SmartSummarize — Model</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR (same design, Home link this time) -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">AI</div>
+        <div class="brand-text">SmartSummarize</div>
+      </a>
+
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="summarizer.html">Model</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Summarization UI -->
+  <main class="page">
+    <section class="summarizer glass large">
+      <div class="summ-header">
+        <h3>Summarization UI</h3>
+        <p class="muted">Paste your article on the left. Get a concise and focused summary on the right.</p>
+      </div>
+
+      <div class="summ-grid">
+        <!-- LEFT: Input -->
+        <div class="panel glass-panel">
+          <div class="panel-top">
+            <label class="panel-title">Input</label>
+            <select id="styleSelect" class="select">
+              <option value="abstractive">Abstractive (human-like)</option>
+              <option value="extractive">Extractive (fast)</option>
+              <option value="hybrid">Hybrid (best of both)</option>
+            </select>
+          </div>
+          <textarea id="inputText" class="text-input" placeholder="Paste article, report, or email here..."></textarea>
+
+          <div class="panel-actions">
+            <button id="summBtn" class="btn primary">Summarize</button>
+            <button id="clearBtn" class="btn ghost">Clear</button>
+          </div>
+
+          <div class="meta muted" style="margin-top: 1rem;">
+            <span id="inputLength">0</span> characters
+          </div>
+        </div>
+
+        <!-- RIGHT: Output -->
+        <div class="panel glass-panel">
+          <div class="panel-top">
+            <label class="panel-title">Summary</label>
+            <div class="output-tools">
+              <button id="copyBtn" class="btn small">Copy</button>
+              <button id="downloadBtn" class="btn small ghost">Download</button>
+            </div>
+          </div>
+
+          <div id="outputText" class="text-output" contenteditable="false" aria-label="summary output"
+            placeholder="Summary will appear here after you click Summarize.">
+          </div>
+
+          <div class="meta muted">
+            <span id="summaryLength">0</span> characters • <span id="summaryType">—</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
