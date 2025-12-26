@@ -9,7 +9,7 @@ A web application that provides text summarization functionality, built with a P
 
 ## Project Structure
 ```
-Summarizer/
+app/
 ├── backend/           # Backend server and ML model
 │   ├── app.py        # Flask application
 │   ├── model.py      # Text summarization model
